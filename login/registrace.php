@@ -20,7 +20,6 @@
         ?>
         <div class="contentcontainer">
             <div class="regcontainer">
-                <div id="errorReg"></div>
                 <form class="regform" method="POST" id="regform">
                     <label for="usernameReg">Uživatelské jméno</label>
                     <input type="text" name="usernameReg" id="usernameReg" required></input>

@@ -107,10 +107,11 @@ form > p {
         display: none;
     }
 
-    .login {
+    .login, .logged {
         position: static;
         margin-right: 30px;
     }
+
 }
 
 @media only screen and (max-width:800px){
@@ -123,7 +124,7 @@ form > p {
         font-size: 38px;
     }
 
-    .login {
+    .login, .logged {
         display: none;
     }
 }

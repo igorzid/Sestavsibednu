@@ -3,7 +3,7 @@ async function login() {
     const userPassword = document.getElementById("userPasswordInput").value;
 
     await fetch(
-        `http://localhost/projects/web/api/login.php?username=${username}&userPassword=${userPassword}`
+        `http://localhost/projects/sestavsibednu/api/login.php?username=${username}&userPassword=${userPassword}`
     );
 
     location.reload();
@@ -17,33 +17,14 @@ async function registration() {
     const username = document.getElementById("usernameReg").value;
     const userPassword = document.getElementById("passwordReg").value;
     const email = document.getElementById("emailReg").value;
-    const errorElement = document.getElementById("errorReg");
 
-    let messages = [];
-
-    if(username.value === "") {
-        messages.push("uživatelské jméno musí být vyplněno");
-    }
-
-    if(userPassword.value === "") {
-        messages.push("heslo musí být vyplněno");
-    }
-
-    if(email.value === "") {
-        messages.push("email musí být vyplněn");
-    }
-
-    if(messages.length > 0) {
-        errorElement.innerText = messages.join(", ");
-        return;
-    }
     const userreg = {
         username: username,
         userPassword: userPassword,
         email: email
     };
 
-    await fetch(`http://localhost/projects/web/api/reg.php`, {
+    await fetch(`http://localhost/projects/sestavsibednu/api/reg.php`, {
         method: "POST",
         body: JSON.stringify(userreg)
       });
