@@ -1,0 +1,129 @@
+.headerscontainer {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: auto;
+}
+
+.headercontainer {
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 160px;
+    background-image: linear-gradient(to right, rgb(229, 153, 201), rgb(189, 195, 243));
+}  
+
+.headercontainer > h2 {
+    font-size: 52px;
+    font-family: 'Patrick Hand', cursive;
+    margin: 0px 0px 0px 30px;
+}
+
+.headercontainer > img {
+    margin: 0px 30px 0px 0px;
+}
+
+.loc {
+    height: 25px;
+    width: auto;
+    background-image: linear-gradient(to right, rgb(229, 153, 201), rgb(189, 195, 243));
+}
+
+.buttons {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons > button:hover {
+    background-color: rgb(216, 217, 245);
+}
+
+.buttons > button {
+    height: 25px;
+    width: 80px;
+    border-radius: 8px;
+    border: 0.6px black solid;
+}
+
+.login {
+    position: relative;
+    left: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+    width: 200px;
+}
+
+.login > *{
+    margin-top: 4px;
+    height: 23px;
+    width: 200px;
+}
+
+.logged > *{
+    margin-top: 4px;
+    height: 23px;
+    width: 200px;
+}
+
+.logged{
+    position: relative;
+    left: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+    width: 200px;
+}
+
+.logoutbutton {
+    height: 25px;
+    width: 80px;
+    border-radius: 10px;
+    border: 0.6px black solid;
+}
+
+.logoutbutton:hover {
+    background-color: rgb(216, 217, 245);
+}
+
+form > p {
+    font-size: 18px
+}
+
+@media only screen and (max-width:1199px){
+    .headerscontainer{
+        width: 100vw;
+    }
+
+    .headercontainer > img {
+        display: none;
+    }
+
+    .login {
+        position: static;
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    
+    .headercontainer {
+        height: 120px;
+    }
+
+    .headercontainer > h2 {
+        font-size: 38px;
+    }
+
+    .login {
+        display: none;
+    }
+}

@@ -1,0 +1,81 @@
+.addcontainer {
+    height: 630px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputcontainer {
+    width: 300px;
+    height: 70px;
+    border: 0px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.inputcontainer > p {
+    font-size: 25px;
+    margin-top: 12px;
+}
+
+.addinput {
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    height: 28px;
+    width: 220px;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+.addcontainer > button {
+    font-size: 21px;
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0.6px black solid;
+}
+
+#selectcontainer:hover .selectdrop {
+    opacity: 1;
+    visibility: visible;
+}
+
+.selecttype {
+    padding: 5px;
+    border-radius: 4px;
+    height: 28px;
+    width: 220px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+#type {
+    font-size: 18px;
+}
+
+.selectdrop {
+    border-radius: 4px;
+    height: auto;
+    width: 220px;
+    background-color: white;
+    position: relative;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+
+.selectlist  {
+    padding: 5px;
+    font-size: 18px;
+}

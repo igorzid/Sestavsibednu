@@ -1,0 +1,167 @@
+.navcontainer {
+    margin-right: 20px;
+    width: 480px;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+}
+
+.navobjects {
+    height: 64px;
+    width: 96%;
+    margin: 2% 3px 2% 3px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    border-radius: 20px;
+    background-color: rgb(226, 217, 245);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.objectborder {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 250px;
+    background-image: linear-gradient(to right, rgb(229, 153, 201), rgb(189, 195, 243));
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.navobjects:hover {
+    background-color: rgb(216, 217, 245);
+
+}
+
+.navextension {
+    display: none;
+    flex-direction: column;
+    height: 70px;
+    width: 200px;
+    margin-left: -20px;
+    position: relative;
+    z-index: 2;
+    background-color: rgb(189, 195, 243);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.objectborder:hover + div {
+    display: flex;
+}
+
+.navextension:hover {
+    display: flex;
+}
+
+#threeobjects {
+    height: 102.5px;
+}
+
+#exthover:hover {
+    display: flex;
+}
+
+#exthover:hover + div {
+    display: flex;
+}
+
+.objectborder:hover {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.extensionobjects {
+    display: flex;
+    align-items: center;
+    height: 27.5px;
+    width: 85%;
+    margin-top: 5px;
+    margin-left: 25px;
+    border-radius: 20px;
+    background-color: rgb(226, 217, 245);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.extensionobjects:hover {
+    background-color: rgb(216, 217, 245);
+}
+
+.hamburger  {
+    display: none;
+}
+
+@media only screen and (max-width:800px) {
+
+    .hamburger {
+        background-color: rgb(229, 153, 201);
+        height: 30px;
+        width: 40px;
+        margin-top: 30px;
+        margin-left: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        left: 0px;
+        top: 120px;
+        border: 0px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .burger {
+        height: 3px;
+        width: 30px;
+        background-color: rgb(226, 217, 245);
+        border-radius: 4px;
+    }
+
+
+    .navcontainer {
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        top: 180px;
+        margin-left: 8px;
+    }
+    .navlist {
+        height: 40px;
+    }
+
+    .objectborder {
+        width: 185px;
+    }
+
+    .navobjects {
+        height: 34px;
+    }
+
+    .navcontainer {
+        width: 90vw;
+    }
+
+    .navextension {
+        width: 175px;
+    }
+
+    .extensionobjects {
+        width: 82%;
+    }
+}

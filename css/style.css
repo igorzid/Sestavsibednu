@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto:wght@300&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Patrick Hand', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(226, 217, 245);
+}
+
+main {
+    margin: 50px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    height: auto;
+}
+
+.contentcontainer {
+    margin: 0px 0px 0px -200px;
+    width: 900px;
+    height: auto;
+    background-image: linear-gradient(to right, rgb(229, 153, 201), rgb(189, 195, 243));
+    display: flex;
+    flex-direction: column;
+}
+
+.contentcontainer > h2 {
+    margin: 20px 0px 50px 20px;
+}
+
+.contentcontainer > p {
+    margin: 30px 20px 30px 20px;
+}
+
+.menu {
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 420px;
+}
+
+.menu > a > img {
+    width: 90%;
+    height: 100%(of-width);
+}
+
+.menu > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 29%;
+    height: 76%;
+}
+
+.menu > a > p {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.objectscontainer {
+    margin: 0px;
+    width: 100%;
+    height: auto;
+}
+
+.product {
+    height: auto;
+    width: 95%;
+    margin: 30px 2.5% 20px 2.5%;
+}
+
+.product > p {
+    font-size: 23px;
+    margin: 0px 0px 10px 20px;
+}
+
+.object {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 210px;
+    border-radius: 20px;
+    background-color: rgb(226, 217, 245);
+}
+
+.objectinfo > ul > li {
+    font-size: 15px;
+    height: 28px;
+}
+
+.objectinfo > ul {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.objectinfo > ul:nth-child(2) {
+    list-style-type: none;
+}
+
+.object > * {
+    margin: 5px;
+}
+
+.object > img {
+    width: 18%;
+    height: 100%(of-width);
+}
+
+.object > .objectinfo {
+    display: flex;
+    flex-direction: row;
+    height: 160px;
+    width: 440px;
+    margin-left: 15px;
+}
+
+.object > .price {
+    display: flex;
+    align-items: flex-end;
+    height: 160px;
+    width: 160px;
+    font-size: 22px;
+}
+
+@media only screen and (max-width:1199px){
+    .contentcontainer {
+        width: 75%;
+    }
+    main {
+        width: 100%;
+    }
+
+    .menu {
+        height: 60%;
+    }
+}
+
+
+@media only screen and (max-width:800px){
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contentcontainer {
+        width: 96%;
+        margin: 60px 0px 0px 0px;
+        border-radius: 4px;
+    }
+
+    .object  {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .objectinfo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .objectinfo > ul{
+        width: auto;
+        list-style-type: none;
+    }
+
+    .objectinfo > ul > li{
+        font-size: 15px;
+        margin: 2px;
+    }
+
+    .object > img {
+        width: 25%;
+        margin: 20px;
+    }
+
+    .object > .price {
+        width: auto;
+        height: auto;
+        margin: 10px;
+    }
+}
